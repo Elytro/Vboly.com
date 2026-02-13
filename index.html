@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>系统升级中</title>
+  <link href="https://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://apps.bdimg.com/libs/fontawesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+      padding: 20px;
+    }
+    .container-fluid {
+      max-width: 600px;
+      width: 100%;
+    }
+    .main-content {
+      text-align: center;
+    }
+    .status-indicator {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 40px;
+      position: relative;
+    }
+    .status-circle {
+      width: 80px;
+      height: 80px;
+      border: 3px solid #e0e0e0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .status-circle::before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border: 3px solid transparent;
+      border-top-color: #333;
+      border-radius: 50%;
+      animation: spin 1.5s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .status-icon {
+      font-size: 32px;
+      color: #333;
+    }
+    .main-title {
+      font-size: 32px;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 60px;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+    .contact-section {
+      background: #fafafa;
+      border-radius: 12px;
+      padding: 30px;
+      margin-top: 40px;
+    }
+    .contact-title {
+      font-size: 13px;
+      color: #999;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 24px;
+      background: #fff;
+      border-radius: 8px;
+      border: 1px solid #e0e0e0;
+      transition: all 0.3s ease;
+    }
+    .contact-item:hover {
+      border-color: #333;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-decoration: none;
+    }
+    .contact-icon {
+      font-size: 18px;
+      color: #333;
+    }
+    .contact-text {
+      font-size: 15px;
+      color: #111;
+      font-weight: 500;
+    }
+    .footer {
+      margin-top: 50px;
+      font-size: 13px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="main-content">
+      <div class="status-indicator">
+        <div class="status-circle">
+          <i class="fa fa-refresh status-icon fa-spin"></i>
+        </div>
+      </div>
+      
+      <h1 class="main-title">系统升级中</h1>
+      <p class="subtitle">我们正在努力优化系统，为您提供更好的服务体验<br>预计恢复时间：待定</p>
+      
+      <div class="contact-section">
+        <div class="contact-title">紧急联系</div>
+        <a href="tencent://message/?uin=3272385" class="contact-item">
+          <i class="fa fa-qq contact-icon"></i>
+          <span class="contact-text">3272385</span>
+        </a>
+      </div>
+      
+      <div class="footer">
+        © 2026 Miubi
+      </div>
+    </div>
+  </div>
+</body>
+</html>
